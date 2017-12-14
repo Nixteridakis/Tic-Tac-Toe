@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="tictactoe.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+<!-- Choose X/O Board -->
+<div id="myModal" class="modal">
+  <div class="modal-content bgd">
+  <span class="close">&times;</span>
+    <div class="modal-body">
+    <div id="pickX"></div>
+    <div id="pickO"></div>
+    </div>
+  </div>
+
+</div>
+  <button class="reset" onclick="reset()">RESET</button>
+
+
+<div class="title">TIC TAC TOE</div>
+
+<!-- The main board with all surrounding elements -->
+
+<div class="container bgimg" >
+  <div class="table-container">
+     <img class="lines" src="">
+    <table style="width:100%">
+       <tr>
+    <th id="1" onclick="init(1)"></th>
+    <th id="2" onclick="init(2)"></th> 
+    <th id="3"  onclick="init(3)"></th>
+  </tr>
+      <tr>
+    <th id="4"  onclick="init(4)"></th>
+    <th id="5"  onclick="init(5)"></th> 
+    <th id="6"  onclick="init(6)"></th>
+  </tr>
+      <tr>
+    <th id="7"  onclick="init(7)"></th>
+    <th id="8"  onclick="init(8)"></th> 
+    <th id="9"  onclick="init(9)"></th>
+  </tr>
+    </table>
+    </div>
+  <!––Score boxes -->
+  <div class="scores score-x"><h>X</h><h id="scoreNumX"></h></div>
+  <div class="scores score-tie"><h>T</h><h id="tieNum"></h></div>
+  <div class="scores score-o"><h style="margin-left:15px;">O</h><h id="scoreNumO"></h></div>
+  <!––Difficulty boxes -->
+<div class="difficulties">
+  <div id="easy"></div>
+  <div id="hard"></div>
+</div>
+  <i class="fa fa-pencil fa-inverse fa-5x" aria-hidden="true" id="myBtn"></i>
+</div>
+</body>
+</html>
+

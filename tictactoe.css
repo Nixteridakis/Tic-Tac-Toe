@@ -1,0 +1,199 @@
+
+
+body {
+  background-color: #37393a;
+}
+
+.reset{
+  position:relative;
+}
+
+.bgimg {
+  background: url(http://i.imgur.com/DVgKap9.jpg);
+  background-size: 590px 658px;
+}
+
+.lines{
+  position:absolute;
+}
+
+.container {
+  position: relative;
+  float:none;
+  margin:0 auto;
+  box-sizing: border-box;
+  width: 590px;
+  height: 658px;
+  font-family: "Indie Flower", cursive;
+  color: #efede3;
+}
+
+.title{
+  margin-top:-30px;
+   font-family: "Indie Flower", cursive;
+  color: #efede3;
+  font-size:70px;
+  text-align:center;
+  padding:0px;
+  height:80px;
+
+}
+
+.table-container {
+  width: 440px;
+  height: 440px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+table {
+  height: 100%;
+}
+th,
+td {
+    font-family: "Indie Flower", cursive;
+  color: #efede3;
+
+  font-size: 95px;
+  width: 34%;
+  height: 34%;
+}
+
+.scores {
+  background: url(http://i.imgur.com/KSKqpms.jpg);
+  position: absolute;
+  border-radius: 10px;
+  width: 150px;
+  height: 80px;
+  font-size: 70px;
+  max-height: 80px;
+  margin-top: 670px;
+  margin-left: 30px;
+}
+
+.score-o {
+  margin-left: 445px;
+  top: 3px;
+}
+
+.score-x {
+  margin-left: 0px;
+}
+
+.score-tie {
+  background: url(http://i.imgur.com/X5ayArX.jpg);
+  margin-left: 230px;
+}
+
+.scores h{
+  margin-left: 15px;
+  height: 100%;
+  position:absolute;
+}
+
+#scoreNumX,#scoreNumO,#tieNum{
+  margin-left:85px;
+
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+	background: rgba(0, 0, 0, 0.4);
+  overflow: auto; /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background: url(http://i.imgur.com/6Ra4Oio.jpg);
+  position: relative;
+  margin: auto;
+  top:33%;
+  width: 545px;
+  height: 345px;
+  border-radius: 38px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 275px;
+    opacity: 1;
+  }
+}
+
+.modal-body {
+  padding: 3px 16px;
+}
+.close {
+  margin-top:-25px;
+  color: black;
+  float: right;
+  font-size: 60px;
+  font-weight: bold;
+  margin-right:20px;
+  font-family: "Indie Flower", cursive;
+	cursor: pointer;
+
+
+}
+
+#pickO,#pickX{position: relative;
+	cursor: pointer;
+  width: 120px;
+	height: 140px;  
+  top:130px;
+  left:100px;
+  float: left;
+
+}
+
+#pickX {
+}
+#pickO {
+  margin-left:70px;
+}
+
+#easy, #hard {
+  position:absolute;
+  right:-276px;
+  width: 275px;
+  height: 89px;
+  cursor:pointer;
+}
+
+#easy{
+  background:url("http://i.imgur.com/TdXhjSI.jpg");
+  top:200px;
+
+}
+#hard {
+  background:url("http://i.imgur.com/epcX3i8.jpg");
+  top:320px;
+}
+
+#myBtn{
+	cursor: pointer;
+  margin-left:500px;
+  margin-top:540px;
+  height: 80px;
+  width: 80px;
+}
